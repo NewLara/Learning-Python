@@ -1,12 +1,10 @@
 #get the age of the person
+age = float(input('What is your age? '))
 
-age = float(input("Enter your age: "))
+#Display value entered
+print("You entered: ",format(age, '.1f'))
 
-if age >=1:
-    print("You entered: ",format(age, '.0f'))
-else:
-    print("You entered: ",format(age, '.1f'))
-
+#Display age classification based on entered age
 if age >= 20:
     print("You are an adult")
     

@@ -1,5 +1,4 @@
 #get speed and hours traveled
-
 speed = float(input("How fast were you going?"))
 while speed < 1:
     print("ERROR: Speed must be higher than zero.")
@@ -9,12 +8,14 @@ hours = float(input("How many hours did you travel?"))
 while hours < 1:
     print("ERROR: Hours must be higher than zero.")
     hours = float(input("How many hours did you travel?"))
-    
+
+#Table Header
 print()
 print('----------------')
 print('Hour\tDistance')
 print('----------------')
 
+#loop to print the Hour and distance traveled 
 for num in range(1, int(hours + 1)):
     distance = num*speed
     print(format(num, '.0f'), '\t', format(distance, '.0f'))
