@@ -1,3 +1,7 @@
+#Get number of years from user to calculate the total number of months
+#with total number of rainfall in inches, and average rainfall for all months provided
+
+
 #get number of years
 numOfYears = int(input("How many years?: "))
 numOfMonths = numOfYears*12
