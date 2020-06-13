@@ -10,24 +10,24 @@ def main():
         #get distance in kilometers
         kilo = float(input("Enter distance in kilometers: "))
         print()
-        
-        #convert by calling method in myModule
-        print('I can convert to miles by calling a MODULE METHOD....')
-        print('Then I call an IN PROGRAM FUNCTION to print the results')
-        miles = myModule.convertToMiles(kilo)
-        print()
-        # call print conversion
-        printConv(kilo, miles)    
-        
-        #call an in program function to convert
-        print()
-        print('OR I can convert to miles by calling an IN PROGRAM FUNCTION ....')
-        print('This function calls the print funtion to print the results')
-        print()
-        convert(kilo)
-        
-
-       
+        if kilo > 0: 
+            #convert by calling method in myModule
+            print('I can convert to miles by calling a MODULE METHOD....')
+            print('Then I call an IN PROGRAM FUNCTION to print the results')
+            miles = myModule.convertToMiles(kilo)
+            print()
+            # call print conversion
+            printConv(kilo, miles)    
+            
+            #call an in program function to convert
+            print()
+            print('OR I can convert to miles by calling an IN PROGRAM FUNCTION ....')
+            print('This function calls the print funtion to print the results')
+            print()
+            convert(kilo)
+        else:
+            print('number must be larger than Zero.')      
+     
     except Exception as err:
         print(err)
         
