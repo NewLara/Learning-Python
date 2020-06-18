@@ -6,4 +6,4 @@ Simone
 Larry
 Moe
 Bill
-Sam
+SamNEWNAME

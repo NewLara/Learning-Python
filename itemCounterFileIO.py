@@ -94,7 +94,6 @@ def readFile(fileName):
     #iterate through names in file, accumulating count, and printing names
     count = 0
     for name in names_file:
-        #names = names_file.readline()
         name = name.rstrip('\n')
         count += 1
         print(name)
