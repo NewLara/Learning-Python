@@ -34,37 +34,41 @@ def getNumbers():
     #while repeat is not 0, get a number and append to list,
     #then decrement repeat
     while repeat != 0:
-        num = float(input('Enter a number: '))
+        num = int(input('Enter a number: '))
         num_list.append(num)
         repeat -= 1
 
     return num_list
 
 def printNumbers(li):
+    print()
+    print("The numbers you entered are: " )
     for num in li:
-     print(format(li[num], '.2f'))
+     print(li[num],end ='')
+    print()
+     
 
 def lowestNum(li):
     low = min(li)
-    print('Lowest number in list :', format(low, '.2f'))
+    print('Lowest number in list :', low)
     return min(li)
 
 def highestNum(li):
     high = max(li)
-    print('Highest number in list :', format(high, '.2f'))
+    print('Highest number in list :', high)
     return max(li)
 
 def totalNum(li):
     total = 0.0
     for value in li:
         total += value
-    print('The toal of all numbers is:',format(total, '.2f'))
+    print('The toal of all numbers is:',total)
     return total
 
 def avgNum(li):
     total = totalNum(li)
     avg = total / len(li)
-    print('The average of all numbers is:',format(avg, '.2f'))
+    print('The average of all numbers is:',avg)
 
 
 
