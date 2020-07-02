@@ -1,12 +1,11 @@
 #Program uses dictionary key:value pairs to encrypt a file and write the encrypted string to another file 
 def main():
-    #dictionary with values for alphabet and blank space 
-    #blank space value is a blank space
+    #dictionary with values for alphabet and blank space ..blank space value is a blank space
     alpha = {'A': '!', 'B': '@', 'C': '#', 'D': '$', 'E': '^',
             'F': '&', 'G': '*', 'H':'(', 'I': ')', 'J': '-',
             'K': '+', 'L': '=', 'M': '_', 'N': '?', 'O': '/',
             'P': '>', 'Q': '.', 'R': '<', 'S': ',', 'T': ':',
-            'U': ';', 'V': '|', 'W': '!!', 'X': '@@', 'Y': '##', 'Z': '$$', ' ':' '}
+             'U': ';', 'V': '|', 'W': '[', 'X': '`', 'Y': '~', 'Z': ']', ' ':' '}
 
     encrypted = openAndReadFile(alpha)
     writeEncryptedToFile(encrypted)
@@ -31,17 +30,3 @@ def openAndReadFile(alpha):
     return encryptedVersion
 
 main()
-
-
-
-
-   
-
-#use dictionary to encrypt file contents
-
-#close file
-
-#Open file for writing the encrypted contents
-#in_file = open('encrypted.py', 'w')
-
-
