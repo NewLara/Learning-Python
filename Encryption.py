@@ -7,6 +7,7 @@ def main():
             'P': '>', 'Q': '.', 'R': '<', 'S': ',', 'T': ':',
              'U': ';', 'V': '|', 'W': '[', 'X': '`', 'Y': '~', 'Z': ']', ' ':' '}
 
+     #call functions to read file and write encrypted string to a different file
     encrypted = openAndReadFile(alpha)
     writeEncryptedToFile(encrypted)
 
@@ -14,8 +15,9 @@ def writeEncryptedToFile(encrypted):
     in_file = open('thisIsEncrypted.txt', 'w')
     in_file.write(encrypted)
 
+#Read file and encrypt
 def openAndReadFile(alpha):
-    #Open file for reading 
+    #Open plain text file for reading 
     out_file = open('encryptThis.txt', 'r')
 
     #read out_file contents, 
@@ -28,5 +30,5 @@ def openAndReadFile(alpha):
                 encryptedVersion += alpha[ch]
     out_file.close()
     return encryptedVersion
-
+#call main
 main()
