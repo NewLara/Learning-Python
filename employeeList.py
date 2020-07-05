@@ -14,8 +14,6 @@ def main():
     #print(employee1, '\n', employee2, '\n', employee3)
     print(employee1)
     print(employee2)
-    print(employee3)
-    
-
+    print(employee3)  
 
 main() 
